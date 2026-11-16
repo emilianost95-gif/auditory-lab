@@ -1,0 +1,46 @@
+export interface GlossaryEntry {
+  term: string;
+  def: string;
+  module: number;
+}
+
+export const GLOSSARY: GlossaryEntry[] = [
+  { term: 'Amplitud', def: 'Máxima variación de presión (o desplazamiento) de una onda respecto de su valor de equilibrio. Se relaciona con la intensidad.', module: 4 },
+  { term: 'Armónicos', def: 'Frecuencias que son múltiplos enteros de la fundamental. Su combinación define el timbre.', module: 5 },
+  { term: 'Audición', def: 'Sentido que permite percibir sonidos. Incluye la recepción en el oído, la conducción nerviosa y la interpretación cerebral.', module: 1 },
+  { term: 'Canales semicirculares', def: 'Tres conductos del oído interno que detectan los giros de la cabeza. Función: equilibrio.', module: 2 },
+  { term: 'Células ciliadas', def: 'Receptores sensoriales del órgano de Corti. Transforman el movimiento del líquido coclear en señales eléctricas.', module: 3 },
+  { term: 'Cerumen', def: 'Secreción del conducto auditivo externo que lo protege y lubrica.', module: 2 },
+  { term: 'Cóclea', def: 'Estructura en espiral del oído interno, llena de líquido, donde ocurre la transducción auditiva.', module: 2 },
+  { term: 'Compresión', def: 'Zona de una onda sonora en la que las partículas del medio están más juntas (mayor presión).', module: 1 },
+  { term: 'Conducto auditivo externo', def: 'Tubo de ~2,5 cm que conduce las ondas desde el pabellón hasta el tímpano.', module: 2 },
+  { term: 'Corteza auditiva', def: 'Región del lóbulo temporal que procesa la información auditiva.', module: 3 },
+  { term: 'Decibel (dB)', def: 'Unidad logarítmica del nivel sonoro. Cada +10 dB la intensidad se multiplica por 10.', module: 4 },
+  { term: 'Estribo', def: 'Huesecillo más pequeño del cuerpo (~3 mm). Transmite la vibración a la ventana oval.', module: 2 },
+  { term: 'Frecuencia', def: 'Número de oscilaciones por segundo. Se mide en hercios (Hz).', module: 4 },
+  { term: 'Hercio (Hz)', def: 'Unidad de frecuencia: una oscilación por segundo.', module: 4 },
+  { term: 'Hipoacusia', def: 'Disminución de la capacidad auditiva. Puede ser de conducción o neurosensorial.', module: 6 },
+  { term: 'Impedancia acústica', def: 'Oposición de un medio al paso de la onda. La diferencia aire/líquido obliga al oído medio a amplificar la presión.', module: 3 },
+  { term: 'Impulso nervioso', def: 'Señal electroquímica (potencial de acción) que viaja por las neuronas.', module: 3 },
+  { term: 'Intensidad', def: 'Energía que transporta la onda por unidad de área y tiempo. Depende del cuadrado de la amplitud.', module: 5 },
+  { term: 'Longitud de onda (λ)', def: 'Distancia entre dos compresiones consecutivas. λ = v / f.', module: 4 },
+  { term: 'Martillo', def: 'Primer huesecillo; su mango está unido al tímpano.', module: 2 },
+  { term: 'Membrana basilar', def: 'Membrana de la cóclea sobre la que se apoya el órgano de Corti. Vibra en distintos puntos según la frecuencia.', module: 3 },
+  { term: 'Nervio auditivo', def: 'Rama coclear del nervio vestibulococlear (VIII par). Lleva impulsos al tronco encefálico.', module: 2 },
+  { term: 'Onda mecánica', def: 'Onda que necesita un medio material para propagarse, como el sonido.', module: 1 },
+  { term: 'Órgano de Corti', def: 'Estructura de la cóclea que contiene las células ciliadas.', module: 2 },
+  { term: 'Otosclerosis', def: 'Crecimiento óseo anormal que fija el estribo y produce hipoacusia de conducción.', module: 2 },
+  { term: 'Pabellón auricular', def: 'Oreja. Capta las ondas sonoras y ayuda a localizar su origen.', module: 2 },
+  { term: 'Rarefacción', def: 'Zona de una onda sonora en la que las partículas están más separadas (menor presión).', module: 1 },
+  { term: 'Sonoridad', def: 'Percepción subjetiva de qué tan fuerte es un sonido. Depende de la intensidad y también de la frecuencia.', module: 5 },
+  { term: 'Timbre', def: 'Cualidad que distingue dos sonidos de igual tono e intensidad. Depende de la forma de onda.', module: 5 },
+  { term: 'Tímpano', def: 'Membrana que vibra con las ondas sonoras y separa el oído externo del medio.', module: 2 },
+  { term: 'Tinnitus', def: 'Percepción de un zumbido o pitido sin fuente externa.', module: 6 },
+  { term: 'Tono', def: 'Cualidad perceptiva que distingue sonidos graves y agudos. Depende principalmente de la frecuencia.', module: 5 },
+  { term: 'Tonotopía', def: 'Organización por frecuencias: la base de la cóclea responde a agudos y el vértice a graves.', module: 3 },
+  { term: 'Transducción', def: 'Conversión de un tipo de energía en otro. En el oído: mecánica → electroquímica.', module: 3 },
+  { term: 'Trompa de Eustaquio', def: 'Conducto que une el oído medio con la nasofaringe e iguala presiones.', module: 2 },
+  { term: 'Ventana oval', def: 'Abertura entre oído medio e interno donde se apoya el estribo.', module: 2 },
+  { term: 'Vestíbulo', def: 'Cavidad del oído interno (utrículo y sáculo) que detecta gravedad y aceleraciones lineales.', module: 2 },
+  { term: 'Yunque', def: 'Huesecillo intermedio entre martillo y estribo.', module: 2 },
+];

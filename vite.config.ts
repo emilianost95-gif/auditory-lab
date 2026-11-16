@@ -1,0 +1,19 @@
+/// <reference types="vitest/config" />
+import { fileURLToPath, URL } from 'node:url';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+
+export default defineConfig({
+  base: './',
+  plugins: [react(), tailwindcss()],
+  resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => (id.includes('node_modules') ? 'vendor' : undefined),
+      },
+    },
+  },
+  test: { environment: 'jsdom', include: ['src/**/*.test.{ts,tsx}'], css: false },
+});
